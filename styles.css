@@ -1,4 +1,9 @@
-
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 body {
   background-color: #b3b4ba;
   margin-top: -5px;
