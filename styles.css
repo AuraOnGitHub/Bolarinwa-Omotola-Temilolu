@@ -5,7 +5,13 @@
     
   }
 
+  .project-div {
+    justify-content: center;
+  }
 
+  .about-section, .welcome-section, .project-section, .contact-section {
+    justify-content: center;
+  }
 }
 
 body {
@@ -109,6 +115,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   font-family: teko, sans-serif;
+  max-width: 600px;
 }
 
 .bio {
