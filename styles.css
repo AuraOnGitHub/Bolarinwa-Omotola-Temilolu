@@ -5,10 +5,6 @@
     
   }
 
-  .project-div {
-    justify-content: center;
-  }
-
   .about-section, .welcome-section, .project-section, .contact-section {
     justify-content: center;
   }
@@ -61,6 +57,11 @@ body {
   margin-right: 10px;
 }
 
+.page-box {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
 
 .welcome-section {
   width: 80%;
@@ -158,6 +159,7 @@ body {
 .project-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-div img {
