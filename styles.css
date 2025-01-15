@@ -1,59 +1,18 @@
-:root {
-  --breakpoint-sm: 600px;
-}
-
-@media (max-width: var(--breakpoint-sm)) {
+@media (max-width: 600px) {
   body {
     font-size: 14px;
     padding: 10px;
-  }
-  
-  .header-name {
-    font-size: 20px;
-  }
-  
-  .welcome-section p {
-    font-size: 40px;
-  }
-  
-  .about-section p {
-    font-size: 18px;
-  }
-  
-  .project-div p {
-    font-size: 16px;
+    
   }
 
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .hyperlinks {
-    grid-template-columns: 1fr;
-  }
-
-  .welcome-section, .about-section, .project-section, .contact-section {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
-    padding-left: 20px;
-  }
-
-  .my-picture {
-    height: 150px;
-    margin-left: 20px;
-  }
 }
 
 body {
   background-color: #b3b4ba;
   margin-top: -5px;
   font-family: Teko, sans-serif;
+  
 }
 
 .header {
@@ -62,13 +21,13 @@ body {
   border-bottom-style: solid;
   border-width: 1px;
   width: 100%;
-  
 }
 
 .header-name {
   font-weight: 700;
   font-size: 25px;
   transition: transform 0.3s ease;
+  margin-left: 10px;
 }
 
 .header-name:hover {
@@ -76,8 +35,8 @@ body {
 }
 
 .hyperlinks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  display: flex;
+  flex-wrap: wrap;  /* to make the hyperlink adjust according to the screen width*/
 }
 
 .header img {
@@ -150,8 +109,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   font-family: teko, sans-serif;
-  width: 70%;
-  
 }
 
 .bio {
@@ -159,6 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .bar-img {
@@ -167,10 +125,16 @@ body {
 
 .my-picture {
   width: auto;
-  height: 200px;
-  margin-top: 20px;
-  margin-left: 60px;
-  aspect-ratio: 3/4;
+  height: 12.5rem;
+  margin: 0 20px 0 40px;
+  aspect-ratio: 4/4;
+  border-radius: 50%;
+  box-shadow: -3px 3px 10px;
+  transition: transform 0.3s ease;
+}
+
+.my-picture:hover {
+  transform: scale(1.1);  /*to enlarge it  little*/
 }
 
 .project-section {
@@ -186,6 +150,7 @@ body {
 
 .project-div {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-div img {
@@ -204,9 +169,6 @@ body {
 .java-project:hover {
   transform: scale(1.1);
 }
-}
-
-
 
 .project-div p {
   font-family: teko, serif;
